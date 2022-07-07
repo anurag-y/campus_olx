@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+     <%-include('./partials/head.ejs') %>   <!--This is to include partials i.e. code written in separate file injected here -->
+<body>
+    <%-include('./partials/top.ejs') %>       <!--This is to include partials i.e. code written in separate file injected here -->
+    <h1>Register to CampUS!</h1>
+    <div class="login">
+        <form id="reg-form">
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" required> <br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+<!-- Script Below is written for interacting with app.js page so that data from here can be sent to server -->
+
+    <script>
+        const form=document.getElementById('reg-form');
+        form.addEventListener('submit',registerUser);
+        async function registerUser(event)
+        {
+            //   event.Preventdefault();
+            const email=document.getElementById('email').value;
+            const password=document.getElementById('password').value
+
+            const result=await fetch('/register',{
+                method: "POST",
+                headers: {
+                    'Content-Type' : 'application/json'
+                },
+                body: JSON.stringify({
+                    email,
+                    password
+                })
+            }).then((res)=>res.json())
+            console.log(result)
+
+        }
+    </script>
+</body>
+</html>

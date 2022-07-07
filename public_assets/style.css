@@ -1,0 +1,159 @@
+body
+{
+    margin: 0;
+}
+.top
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(116, 205, 32, 0.389);
+    justify-items: center;
+    width: 100%;
+    /* position: fixed; */
+    
+}
+
+
+
+.name
+{
+    font-size:xx-large;
+    flex-grow: 8;
+    text-align: center;
+    
+    
+}
+.name a{
+    text-decoration: none;
+    color: black;
+}
+
+.sell
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0; 
+    flex-grow: 1;
+    justify-content: center;
+    
+}
+
+.profile
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
+}
+
+.logo
+{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+/* CSS for Item Profile begins here. */
+.photo {
+    
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+    pad: 20px;
+    border-style: solid;
+    border-color: rgba(116, 205, 32, 0.389);
+    border-radius: 10px;
+}
+.photo img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .details
+  {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    align-items: center;
+    border-style: solid;
+    border-color: rgba(116, 205, 32, 0.389);
+    border-radius: 10px;
+    text-align: left;
+  }
+  .details table{
+      margin: auto;
+      width: 50%;
+      text-align: left;
+
+  }
+
+  /* style for sell page begins here */
+  .sell_items h1{ text-align: center;}
+  .sell_items
+  {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+      width: 80%;
+      background-color: aquamarine;
+      padding: 30px;     
+  }
+
+  .sell_items form
+  {
+      margin: 30px;
+      border: 20px;
+      padding: 30px;
+      background-color: rgb(79, 143, 112);            
+  }
+
+  label
+  {
+     margin: auto;
+  }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+  
+}
+
+input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
